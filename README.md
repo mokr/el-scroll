@@ -20,7 +20,7 @@ Note: It seems to work well for desktop browsers too...
 
 Features
 --------
-* Exposes itself as either an AMD module, [module-loader-tdd](https://github.com/christianalfoni/module-loader-tdd) module or global. The latter is the fallback if none of the module loader are located.
+* Exposes itself as either an AMD module, [module-loader-tdd](https://github.com/christianalfoni/module-loader-tdd) module or a global. The latter is the fallback if none of the module loaders are located.
 * Backbone / jQuery support. See next section.
 
 
@@ -31,7 +31,7 @@ Dependencies / Integration
 * Hard:
     * None
 * Soft:
-    * Backbone if you plan to trigger it by event.
+    * Backbone if you plan to trigger el-scroll by event.
     * jQuery to be able to pass in a jQuery object.
 
 Usage
@@ -78,7 +78,7 @@ Backbone.trigger("elScroll:new", element, [options object])
 Available options:
 
 * applyStyling
-    - Values: true / false
+    - Value: true / false
     - Purpose: Disable the styling set from JS.
 
 Example:
@@ -90,4 +90,4 @@ elScroll(element, {applyStyling: false})
 Future
 ------
 Lots could be done in regards to code structure, features and such, but as part of the purpose is to keep this simple, extensions and rewrite might be better suited for an elScroll2 project.
-Now the plan is to get some experience with the current implementation.
+The current plan is to get some experience with it and take it from there.
